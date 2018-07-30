@@ -74,7 +74,7 @@ let sendError = (log, output, id, error) => {
     ("id", id),
     ("jsonrpc", s("2.0")),
     ("error", error)]));
-  log("Sending response " ++ content);
+  log("Sending error " ++ content);
   send(output, content);
 };
 
